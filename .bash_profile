@@ -111,3 +111,8 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# enable virtualenvwrapper if available
+if [ -f "$(which virtualenvwrapper_lazy.sh)" ]; then
+    source $(which virtualenvwrapper_lazy.sh)
+fi
