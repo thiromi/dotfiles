@@ -66,7 +66,7 @@ YELLOW="\e[0;33m\]"
 LIGHTBLUE="\e[1;34m\]"
 ENDC="\e[1;m\]"
 
-PS1="\[$GREEN[\u@\h]$ENDC $RED$GIT_STATUS$ENDC\[$YELLOW\w\n\[$LIGHTBLUE[\t]\[\e[0m\] \$ "
+PS1="\[$GREEN[\u@\h]$ENDC $RED$GIT_STATUS$ENDC\[$YELLOW\w\n$ENDC\[$LIGHTBLUE[\t]\[\e[0m\] \$ "
 PS1="$PS1"
 
 unset color_prompt force_color_prompt
