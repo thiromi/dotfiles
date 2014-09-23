@@ -56,18 +56,17 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 GIT_STATUS="\$(parse_git_branch)"
-LIGHTRED="\e[1;31m\]"
+LIGHTRED="\[\e[1;31m\]"
 GREEN="\e[0;32m\]"
 YELLOW="\e[0;33m\]"
 LIGHTBLUE="\e[1;34m\]"
-ENDC="\e[1;m\]"
+ENDC="\[\e[1;m\]"
 
-PS1="\[$GREEN[\u@\h]$ENDC $RED$GIT_STATUS$ENDC\[$YELLOW\w\n$ENDC\[$LIGHTBLUE[\t]\[\e[0m\] \$ "
-PS1="$PS1"
+PS1="\[$GREEN[\u@\h]$ENDC $LIGHTRED$GIT_STATUS$ENDC \[$YELLOW\w$ENDC\n\[$LIGHTBLUE[\t]$ENDC\[\e[0m\] \$ "
 
 unset color_prompt force_color_prompt
 
