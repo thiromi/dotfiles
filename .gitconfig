@@ -1,0 +1,7 @@
+[alias]
+	st = status
+	co = checkout
+    log-pretty = "log --pretty=format:\"%h - %an, %ar : %s\""
+
+[push]
+	default = simple
