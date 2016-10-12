@@ -3,5 +3,7 @@
     co = checkout
     log-plain = "log --pretty=format:\"%h - %an, %ar : %s\""
     log-pretty = "log --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\""
+    tags = tag --sort=v:refname
+    tags-by-date = "log --tags --simplify-by-decoration --pretty=\"format:%ci %d\""
 [push]
     default = simple
