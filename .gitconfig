@@ -1,7 +1,7 @@
 [alias]
-	st = status
-	co = checkout
+    st = status
+    co = checkout
     log-plain = "log --pretty=format:\"%h - %an, %ar : %s\""
     log-pretty = "log --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\""
 [push]
-	default = simple
+    default = simple
