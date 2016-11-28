@@ -112,6 +112,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# brew's git bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # enable virtualenvwrapper if available
 if [ -f "$(which virtualenvwrapper_lazy.sh)" ]; then
     source $(which virtualenvwrapper_lazy.sh)
