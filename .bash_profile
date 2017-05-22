@@ -15,8 +15,8 @@ export PROMPT_COMMAND='history -a'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTCONTROL=ignoreboth
-HISTSIZE=50000
-HISTFILESIZE=5000
+HISTSIZE=-1
+HISTFILESIZE=-1
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
