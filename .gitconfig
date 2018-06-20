@@ -1,6 +1,8 @@
 [alias]
     st = status
     co = checkout
+    br = branch
+    bc = branch --format='%(color:cyan)%(creatordate:short) %(color:yellow)%(refname:short)' --sort=creatordate
     log-plain = "log --pretty=format:\"%h - %an, %ar : %s\""
     log-pretty = "log --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\""
     log-tree = ""log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --first-parent --tags --graph""
